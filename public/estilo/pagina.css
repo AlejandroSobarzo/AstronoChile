@@ -1,0 +1,26 @@
+.logo {		
+    text-align: left;
+    height: 110px;
+} 
+hr{
+    border-color: blue;
+  
+    margin: 10px;
+    width: 100px;
+
+}
+h2{
+    font-family: 'Courier New', Courier, monospace;
+    color: white;
+    }
+    .titulo{
+text-align:center;
+
+
+    }
+    p{
+
+        color: white;
+    }
+
+

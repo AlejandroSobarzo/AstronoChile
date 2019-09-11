@@ -1,0 +1,161 @@
+/*
+    Responda las siguientes preguntas.
+*/
+
+/*
+    1.- ¿Cuál es la diferencia entre id y class?
+    La diferencia entre id y class es que id es un identificador unico, y class puede usarse para varios elementos.
+*/
+
+/*
+    2.- ¿Qué sucede entre las líneas 12 y 15?
+    seleccionamos todos los elementos y le damos margen y relleno en este caso es 0 asi que no hace ningun cambio.
+*/
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+h1{
+    font-size: 30px;
+}
+
+h2{
+    font-size: 20px;
+}
+
+/*
+    3.- ¿Para qué nos sirve diplay: block?
+    nos sirve para generar bloques.
+
+*/
+
+header, nav, section, article, aside, footer{
+    display: block;
+}
+
+/*
+    4.- ¿Para qué se utiliza text-align: center?
+    para alinear el texto al centro de nuestra pagina.
+*/
+
+body{
+    background: url(http://lesliefieger.ca/wordpress/wp-content/uploads/2014/10/quasar1.jpeg);
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    background-attachment: fixed;
+}
+
+/*
+    5.- ¿Para qué se está utilizando el identificado #caja_principal?
+para dimensionar la posicion de los elementos dentro de la pagina, el espacio entre la cabecera y la parte superior de la pagina , 
+y alinear el texto hacia el lado izquierdo.
+*/
+#caja_principal{
+    width:900px;
+    margin: 15px auto;
+    text-align: left;
+}
+
+/*
+    6.- ¿Qué es padding y para qué se utiliza?
+    padding es el relleno y se utiliza para  definir el espacio entre el elemento de borde y el elemento de contenido.
+*/
+#cabecera{
+    background-image: url(https://i.pinimg.com/originals/dc/5a/66/dc5a66260acff711a28ee1b125b3ee60.gif);
+    border: 3px solid rgb(158, 87, 46);
+    padding: 10px;
+}
+
+/*
+    7.- ¿Para qué nos sirve border, y cómo se utiliza?
+    para dar borde a los elementos y se utiliza border: Xpx (donde X es un numero que define el grosor de nuestro elemento)
+*/
+
+#barra_navegacion{
+
+    background:url(https://i.pinimg.com/originals/dc/5a/66/dc5a66260acff711a28ee1b125b3ee60.gif);
+    border: 3px solid rgb(158, 87, 46);
+    padding: 5px 15px;
+
+}
+  
+/*
+    8.- ¿Para qué nos sirve display: inline-block y list-style?
+    inline block sirve para hacer las cuadriculas y ponerlas en horizontal. 
+    List style se utilizan para establecer de forma abreviada el valor de una o más propiedades individuales pero en este caso esta en none.
+*/
+#barra_navegacion li{
+    display: inline-block;
+    list-style:none;
+    padding: 5px;
+}
+
+#barra_navegacion a:hover {
+    color:black;
+    background:white;
+    border: 3px solid rgb(158, 87, 46);
+    text-decoration:underline;
+    filter:alpha(opacity=70); 
+   -moz-opacity: 0.65; 
+    opacity: 0.65;
+    position: relative; 
+    top: -3px;
+    cursor:allowed;
+  }
+/*
+    9.- ¿Comó afecta la propiedad "float" en los elementos (etiquetas o selectores) html?
+        los mueve ya que en caso de que el elemento que apliquemos float se posiciona en un lugar que estaba otro elemento.
+    10.- ¿Qué es margin y para qué se utiliza?
+        El margen limpia un área alrededor de un elemento (fuera de borde). El margen no tiene color de fondo, y es completamente transparente.
+        se utiliza para separar elementos.
+    11.- ¿Para qué se utiliza la propiedad background?
+        para poner fondo de pantalla o de elemento en caso de que lo especifiquemos.
+*/
+
+#seccion{
+    float: left;
+    width: 580px;
+    margin: 20px;
+    background: transparent;
+    border: 3px solid rgb(158, 87, 46);
+}
+
+/*
+    12.- ¿Por qué margin tiene dos valores (20px 0px) y cuantos valores puede tener?
+    para posicionar tanto vertical como horizontal. puede tener hasta 4 valores.
+*/
+
+#columna{
+    float: right;
+    width: 200px;
+    margin: 20px 0px;
+    padding: 20px;
+    border: 3px solid rgb(158, 87, 46);
+    background:url(https://i.pinimg.com/originals/dc/5a/66/dc5a66260acff711a28ee1b125b3ee60.gif) ;
+
+}
+
+/*
+    13.-¿Para qué se utiliza clear: both y border-top?
+    clear both: para limpiar tanto elementos flotantes de la izquierda como de la derecha.
+    Border top: para poner un borde en el footer en el lado superior.
+    */
+
+#pie{
+    clear: both;
+    text-align: center;
+    padding: 20px;
+    background-color: rgb(158, 87, 46);
+    border-top: 3px solid rgb(158, 87, 46);
+}
+
+
+
+/*
+    14.-¿Qué es CSS?
+    CSS es un lenguaje de hojas de estilos creado para controlar el aspecto o presentación de los documentos electrónicos definidos con HTML.
+
+    15.- Mencione las tres formas de añadir CSS a un documento HTML.
+    embebido, style y archivos con extension css (externo)
+*/
